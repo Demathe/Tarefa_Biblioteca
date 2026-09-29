@@ -26,4 +26,3 @@ def adicionar_livro():
 
     conn.commit()
 
-

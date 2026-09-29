@@ -11,4 +11,3 @@ conn.execute("CREATE TABLE emprestimos_livros(\
     PRIMARY KEY (emprestimo_id, livro_id))")
 
 
-DEF

@@ -1,7 +1,8 @@
 #menu da atividade
 #lorenzo
-
-
+from utll import lt
+from usuarios import adicionar_usuario
+from autores import adicionar_autor
 while(True):
 
     print("     ===MENU===      \n\
@@ -17,9 +18,10 @@ while(True):
 
 
     if menu == 1:
-        A
+        lt()
+        adicionar_usuario()
     elif menu == 2:
-        A
+        adicionar_autor()
     elif menu ==3:
         A
     elif menu ==4:

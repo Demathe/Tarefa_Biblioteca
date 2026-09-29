@@ -14,12 +14,18 @@ conn.execute("CREATE TABLE usuarios (id INTEGER PRIMARY KEY AUTOINCREMENT \
 
 
 def adicionar_usuario():
+    num = input('\nListar(2)\nAdicionar(1)\nx:')
+    if num == '2':
+        for i in usuario:
+            print(f"Nome: {i["nome"]}, ID: {['id']}")
+    
+    if num == "1":
 
-    nome = input("Nome de usuário?: ")
+        nome = input("Nome de usuário?: ")
 
-    usuario = { "nome" : nome}
+        usuario = { "nome" : nome}
 
-    conn.execute("INSERT INTO usuarios (nome) VALUES(?)",
-                 [(usuario["nome"])])
+        conn.execute("INSERT INTO usuarios (nome) VALUES(?)",
+                    [(usuario["nome"])])
 
     conn.commit()
