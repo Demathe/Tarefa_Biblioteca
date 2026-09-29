@@ -13,6 +13,7 @@ conn.execute("CREATE TABLE editoras (id INTEGER PRIMARY KEY AUTOINCREMENT \
 
 
 def adicionar_editoar():
+    
     nome = input("Nome da editora: ")
     
     #adiciona só um por vez

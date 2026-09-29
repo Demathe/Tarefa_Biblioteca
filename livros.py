@@ -1,6 +1,6 @@
 import sqlite3
 
-conn = sqlite3.connect(biblioteca.db)
+conn = sqlite3.connect("biblioteca.db")
 
 conn.execute("DROP TABLE IF EXISTS livros")
 
@@ -11,3 +11,5 @@ conn.execute("CREATE TABLE livros(\
     ano_publicacao INTEGER NOT NULL,\
     edicao INTEGER DEFAULT(1),\
     DISPONIVEL ")
+
+def listar_livros

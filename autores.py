@@ -14,13 +14,19 @@ conn.execute("CREATE TABLE autores (id INTEGER PRIMARY KEY AUTOINCREMENT \
 
 def adicionar_autor():
 
-        
-    nome_a = input("Nome do(s) autor(es): ")
+    num = input('\nListar(2)\nAdicionar(1)\nx:')
+    if num == '2':
+        for i in autor:
+            print(f"Nome: {i["nome"]}, ID: {['id']}")
     
-    autor = { 'nome_a': nome_a}
+    if num == "1":
+
+        nome_a = input("Nome do(s) autor(es): ")
+        
+        autor = { 'nome_a': nome_a}
 
 
-    conn.execute("INSERT INTO autores (nome) VALUES(?)",
-                 [(autor["nome_a"])])
+        conn.execute("INSERT INTO autores (nome) VALUES(?)",
+                    [(autor["nome_a"])])
 
     conn.commit()
