@@ -4,7 +4,14 @@
 
 while(True):
 
-    print("     ===MENU===      \n(1) Adicionar usuario \n(2) Adicionar autor no sistema \n(3)adicionar editoras ao sistema \n(4) adicionar livro a biblioteca \n(5) emprestimo \(6) adicionar livros do emprestimo\n (0) sair")
+    print("     ===MENU===      \n\
+          (1) usuarios \n\
+          (2) Adicionar autor no sistema \n\
+          (3)adicionar editoras ao sistema \n\
+          (4) adicionar livro a biblioteca \n\
+          (5) emprestimo \n\
+          (6) adicionar livros do emprestimo\n\
+          (0) sair")
 
     menu = input("O que voce desaja fazer: ")
 
