@@ -2,7 +2,16 @@
 #lorenzo
 from utll import lt
 from usuarios import adicionar_usuario
-from autores import adicionar_autor
+from autores import adicionar_autor, nome_a
+
+
+def get_id_autor(conn, nome_a):
+    cursor = conn.cursor()
+
+    cursor.execute(f"SELECT id FROM autores WHERE nome = '{nome_a}'" )
+    resultado = cursor.fetch()
+
+
 while(True):
 
     print("     ===MENU===      \n\
